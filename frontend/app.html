@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./app.css" />
+    <title>Node</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- FORM  -->
+      <form id="form">
+        <input placeholder="muallifi" type="text" />
+        <input placeholder="nomi " type="text" />
+        <input placeholder="narxi" type="text" />
+        <p>Kitoblar</p>
+        <button type="submit">save</button>
+      </form>
+      <!-- EDITFORM -->
+
+      <div class="modal hidden">
+        <form id="editForm">
+          <input type="text" />
+          <input type="text" />
+          <input type="text" />
+          <p>Change data</p>
+          <button type="submit">save changes</button>
+        </form>
+        <button id="closer">x</button>
+      </div>
+      <div id="books"></div>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
